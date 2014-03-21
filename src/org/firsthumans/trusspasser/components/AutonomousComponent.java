@@ -50,9 +50,7 @@ public class AutonomousComponent {
             this.time.reset();
         }
         
-        if (this.lifterPiston.get() == DoubleSolenoid.Value.kForward) {
-            this.lifterPiston.set(DoubleSolenoid.Value.kReverse);
-        }
+        this.lifterPiston.set(DoubleSolenoid.Value.kReverse);
         
         if (this.time.get() < RobotSettings.TIMER_AUTO_DRIVE_DURATION) {
             this.driveTrain.drive(0, 0.333f, 0);
