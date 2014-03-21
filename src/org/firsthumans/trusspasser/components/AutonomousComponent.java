@@ -59,7 +59,7 @@ public class AutonomousComponent {
         } else {
             this.driveTrain.drive(0, 0, 0);
             if (!this.autonomousComplete) {
-                //this.catapult.longShot();
+                this.catapult.longShot();
                 this.autonomousComplete = true;
             }
             this.catapult.update();
