@@ -54,14 +54,12 @@ public class AutonomousComponent {
         
         if (this.time.get() < RobotSettings.TIMER_AUTO_DRIVE_DURATION) {
             this.driveTrain.drive(0, 0.333f, 0);
-            //this.lifter.setDirection(Relay.Direction.kForward);
         } else if (this.time.get() < RobotSettings.TIMER_AUTO_DRIVE_PAUSE) {
             this.driveTrain.drive(0, 0, 0);
         } else {
             this.driveTrain.drive(0, 0, 0);
             if (!this.autonomousComplete) {
-                this.catapult.longShot();
-                RobotMain.log("Catapult Fired");
+                //this.catapult.longShot();
                 this.autonomousComplete = true;
             }
             this.catapult.update();
