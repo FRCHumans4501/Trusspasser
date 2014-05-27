@@ -19,8 +19,8 @@ public class RobotSettings {
     public static boolean PID = true;
     
     public final static float TIMER_PID_ANGLE_DELAY = 5.0f;
-    public final static float TIMER_AUTO_DRIVE_DURATION = 2.25f;
-    public final static float TIMER_AUTO_DRIVE_PAUSE = 4.5f;
+    public final static float TIMER_AUTO_DRIVE_DURATION = 3f; // 2.25f
+    public final static float TIMER_AUTO_DRIVE_PAUSE = 5f; // 4.25f
     
     public final static int CONTROL_STRAFE = Controller.LEFT_AXIS_X;
     public final static int CONTROL_FORWARD = Controller.LEFT_AXIS_Y;
